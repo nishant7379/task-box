@@ -1,0 +1,118 @@
+body {
+    font-family: 'Karla', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #4caf50;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  nav li {
+    margin: 0 10px;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  h2 {
+    color: #333;
+  }
+  
+  ul {
+    padding: 0;
+    list-style: none;
+  }
+  
+  li {
+    margin: 5px 0;
+  }
+  
+  input[type='text'] {
+    padding: 8px;
+    margin-right: 8px;
+  }
+  
+  button {
+    padding: 8px 16px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+  }
+  
+  nav a:hover {
+    text-decoration: underline;
+  }
+  
+  .task-list {
+    margin-top: 20px;
+    width: 100%;
+    max-width: 400px; 
+    padding-left: 35px;
+  }
+  
+  .task-list ul {
+    border: 1px solid #ddd;
+    padding: 0;
+    list-style-type: none;
+  }
+  
+  .task-list li {
+    /* list-style: none; */
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+  }
+  
+  .task-list li::before {
+    content: '\2022'; /* Unicode character for a bullet point */
+    font-size: 1.5em;
+    color: #4caf50;
+    position: absolute;
+    left: -1em;
+  }
+
+  .task-list li:last-child {
+    border-bottom: none;
+  }
+  
+  .add-task {
+    margin-top: 20px;
+    padding-left: 35px;
+  }
